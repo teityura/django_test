@@ -1,1 +1,1 @@
-# django_test
+# django_test## Djangoのテストをしたいときに```docker-compose builddocker-compose run --rm web django-admin startproject blogsite .docker-compose up -dsed -i "s/ALLOWED_HOSTS = \[\]/ALLOWED_HOSTS = ['*']/g" code/blogsite/settings.pygrep ALLOWED_HOSTS code/blogsite/settings.pydocker exec -it blog_web_1 sh```
